@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>CustomerForm</title>
+    </head>
+    <body>
+        <h1>product form</h1>
+    <form method="POST" action="add">
+        <div style="border:2px solid red">
+        {% csrf_token %}
+        {{f.as_p}}
+    </div>
+    <input type="submit" value="add">
+    </form>
+    <p>{{msg}}</p>
+    </body>
+</html>
